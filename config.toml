@@ -1,0 +1,34 @@
+[RABBIT_MQ]
+host = localhost
+port = 61613
+user = user
+password = password
+event_queue = opcua_shuno_event
+state_queue = opcua_shuno_state
+lighting_queue = lighting_event
+
+[RABBIT_MQ_WEBSOCKET]
+host = 127.0.0.1
+port = 5672
+user = user
+password = password
+
+[DB]
+host = 127.0.0.1
+port = 5432
+database = database
+user = user
+password = password
+
+[REDIS]
+host = localhost
+port = 6379
+db = 0
+
+[LOG]
+;filename = home/asuno/etl_events.log
+format = %(asctime)s - %(levelname)s - %(message)s
+level = INFO
+
+[PROCESS_NUM]
+count = 1
